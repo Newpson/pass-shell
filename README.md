@@ -10,11 +10,14 @@
 **Use:**
 
 * **`ppass`** *`add`* `<account>`
-It will generate you a password for specified account and copy it to clipboard for 45 seconds.
+
+ It will generate you a password for specified account and copy it to clipboard for 45 seconds.
 * **`ppass`** `<account>` *`u`*
-It will copy specified account's *primary info* to clipboard for 45 seconds.
+
+ It will copy specified account's *primary info* to clipboard for 45 seconds.
 * **`ppass`** `<account>` *`p`*
-It will copy specified account's password to clipboard for 45 seconds.
+
+ It will copy specified account's password to clipboard for 45 seconds.
 
 **File structure in password store:**
 ```
@@ -36,3 +39,4 @@ Password Store
 ### TODO
 - [x] Add account existence check
 - [ ] Make the *`p`* key optional
+- [ ] Add "remove" feature

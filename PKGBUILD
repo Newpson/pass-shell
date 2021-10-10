@@ -3,7 +3,7 @@ pkgver=1.1
 pkgrel=1
 pkgdesc="Tiny shell for pass utility"
 arch=('any')
-depends=('xclip', 'pass')
+depends=('xclip' 'pass')
 
 package() {
 	mkdir -p "${pkgdir}/usr/bin"
