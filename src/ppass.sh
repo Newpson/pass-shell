@@ -1,3 +1,5 @@
+store="$HOME/.password-store"
+
 notify ()
 {
 	notify-send -i password "Pass" "$1"
@@ -15,8 +17,14 @@ then
 	notify "$2: generated and copied for 45 s"
 	exit 0
 else
-	filename=$(ls ~/.password-store/$1)
-	username=${filename%.*}
+	if [ -e "$store/$1" ]
+	then
+		filename=$(ls $store/$1)
+		username=${filename%.*}
+	else
+		notify "No such account name"
+		exit 2
+	fi
 fi
 
 if [ "$2" = "u" ]
