@@ -32,11 +32,3 @@ Password Store
    └─ account-name-1
       └─ primary-info-3.2.gpg
 ```
-
-------------
-
-
-### TODO
-- [x] Add account existence check
-- [ ] Make the *`p`* key optional
-- [ ] Add "remove" feature
